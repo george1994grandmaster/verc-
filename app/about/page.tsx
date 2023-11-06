@@ -32,7 +32,7 @@ export default function About() {
 
   useEffect(() => {
     // Inside the useEffect callback, you can make a fetch request
-    fetch(" https://george1994grandmaster.github.io/postman-test/test.json")
+    fetch("/api/posts")
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -51,9 +51,8 @@ export default function About() {
     <div>
       {data.map((item: any, index) => (
         <div key={index}>
-          <p>Name: {item.name}</p>
-          <p>Surname: {item.surname}</p>
-          <p>Email: {item.email}</p>
+          <span>title: {item.id}</span>
+          <span>title: {item.title}</span>
         </div>
       ))}
     </div>
