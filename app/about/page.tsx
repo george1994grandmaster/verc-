@@ -32,7 +32,7 @@ export default function About() {
 
   useEffect(() => {
     // Inside the useEffect callback, you can make a fetch request
-    fetch("/api/posts")
+    fetch(" https://george1994grandmaster.github.io/postman-test/test.json")
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
