@@ -49,8 +49,8 @@ export default function About() {
 
   return (
     <div>
-      {data.map((item: any) => (
-        <div>
+      {data.map((item: any, index) => (
+        <div key={index}>
           <p>Name: {item.name}</p>
           <p>Surname: {item.surname}</p>
           <p>Email: {item.email}</p>
